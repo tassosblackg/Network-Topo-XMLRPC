@@ -1,8 +1,6 @@
 import sys
-import random
 import subprocess
 from time import time, sleep
-from xmlrpc.server import SimpleXMLRPCServer
 import xmlrpc.client as cl
 from mininet.topo import Topo
 from mininet.net import Mininet
@@ -56,7 +54,7 @@ def simpleTest():
 
   cpu_load_val = outp[1].strip() # remove escape characters from the end
   # print(i, float(i))
-  print(" Request Accepted from Server ? %s %.2f" % (outp[0],float(cpu_load_val)))
+  print(" Request Accepted from Server ? %s, nCPU_load= %.2f" % (outp[0],float(cpu_load_val)))
 
   p1.terminate() # stop server running in the background of server1-host
 
