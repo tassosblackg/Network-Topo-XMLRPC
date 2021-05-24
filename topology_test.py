@@ -45,10 +45,10 @@ def simpleTest():
 
   print(emb.IP(), server1.IP())
   # 10.0.0.1       10.0.0.2
-  p1 = server1.popen("python3 tserver.py")
+  p1 = server1.popen("python3 server.py")
   sleep(1)
   # passing as arguments IP, current_cpu_load new_cpu_request values
-  res2 = emb.cmdPrint("python3 tclient.py 10.0.0.2 0.8 0.1")
+  res2 = emb.cmdPrint("python3 client.py 10.0.0.2 0.8 0.1")
 
   # Get the response break down to 'Accepted =True' , new_cpu_load_available
   outp = res2.split(",")
