@@ -8,7 +8,7 @@ Example  network topology with Mininet API and client/server with xmlrpc
 sudo python3  topology_test.py
 
 ```
-In order mininet to run a topology it needs `sudo` so you must check your requirements packages to be available thorugh sudo.
+In order mininet to run a topology it needs `sudo` so you must check your requirements packages to be available through sudo.
 
 Using
 
